@@ -198,11 +198,11 @@
     .modal {
       display: flex;
       flex-wrap: wrap;
-      
+      height: 100vh;
       grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
     }
     .submit-button{
-      width:85%;
+      width:100%;
     }
     .subscribe-form{
       padding: 10rem;
@@ -212,7 +212,7 @@
   .modal {
     display: flex;
     flex-wrap: wrap;
-    
+    height: 100vh;
     grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
   }
   .submit-button{

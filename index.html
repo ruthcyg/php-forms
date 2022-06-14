@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML|CSS|JS|PHP</title>
+   
+    <!-----Goggle Font-->
+   
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600&display=swap" rel="stylesheet" />
+     <!---Font Awesome-->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" 
+     crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+     <!--- CSS -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!---JAVASCRIPT-->
+  <script defer src="app.js"></script>
+</head>
+<body>
+    
+    <!--Header-->
+    <header class="header">
+        <nav class="nav">
+            <ul class="nav__links">
+                <li class="nav__item">
+                    <a class="nav__link nav__link--btn btn--show-modal" href="#">Subscribe</a>
+                </li>
+            </ul>
+        </nav>
+        </header>
+         
+
+    <!--Modal (Subscribe Page And Form)-->
+    <!--div class="modal hidden">-->
+    <section class="  modal hidden">
+
+
+        <button class="btn--close-modal">&times;</button>
+            <!---Subscription Services-->
+        <div class="subscription-service">
+            <h2 class="modal__header">
+                Get Everything You Need
+            </br>  For Creating wordpress
+               Websites
+            </h2>
+           
+            <img src="illustration.png" alt="">
+        <p>
+            All-in-one Multinational subscribe
+            Service Perfect for Launching All Kinds
+            of Wordpress Projects
+        </p>
+          </div>
+       
+       <!--Form -->
+    <div class="subscribe-form">
+    
+    <form class="modal__form">
+        
+        <h2 class="modal__header" id="text-top">
+            SUBSCRIBE AND GET 
+        
+            YOUR BONUS
+        </h2>
+    <label for="mail">
+    <input type="email" id="mail" name="mail" placeholder="Email address" required>
+    
+    </label>
+    <label for="names">
+        <input type="text" id="names" placeholder="First Name"  required>
+       
+      </label>
+      <label for="names">
+        <input type="text" id="names" placeholder="Last Name"  required>
+       
+      </label>
+ 
+    <label for="phon">
+    <input type="tel" id="phon" name="phon" placeholder="Address"  required>
+    
+    </label>
+
+    
+    
+   
+    <!--button type="submit">STAY UPDATED</button--->
+    <input type="submit" value="STAY UPDATED" class="submit-button"/>
+    
+  </form--->
+  <p class="text"> 
+    
+    <i class="fa-solid fa-key"></i>
+
+    Your Information will never be shared
+    with any third party
+
+  </p>
+</div>
+    
+    </section>
+    <div class="overlay hidden"></div>
+    
+</body>
+</html>

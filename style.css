@@ -212,8 +212,8 @@
   .modal {
     display: flex;
     flex-wrap: wrap;
-    height: 100vh;
-    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    height: 80vh;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
   }
   .submit-button{
     width:100%;

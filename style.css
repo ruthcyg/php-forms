@@ -24,6 +24,10 @@
 
   
   /* GENERAL ELEMENTS */
+  .container{
+    padding:0 1rem;
+  }
+  /*
   .container {
     display: grid;
     grid-template-columns: [container-start] 1fr [center-start] repeat(6, [col-start] minmax(min-content, 16.66667rem) [col-end]) [center-end] 1fr [container-end];
@@ -35,7 +39,7 @@
       grid-template-rows: min-content 100vh repeat(9, min-content);
     }
   }
-
+*/
   .header {
    /* grid-column: container-start / container-end;*/
     position: absolute;
@@ -100,7 +104,7 @@
   z-index: 1000;
   transition: all 0.5s;
   display: flex;
-  grid-template-columns: container-start / container-end;
+ 
   
  
   }
@@ -253,6 +257,7 @@
    /* grid-template-columns: repeat(auto-fit, minmax(3rem, 1fr));*/
   flex-wrap:wrap;
   padding: 6rem 4rem;
+  margin-top: 2rem;
   
   }
   
@@ -285,7 +290,20 @@
 
 
 }
-
+.btn--close-modal{
+  font-family: inherit;
+    color:black;
+    position: fixed;
+    top: 0.5rem;
+    right: 3.1rem;
+    margin-top: 2.5rem;
+    
+    font-size: 4rem;
+    cursor: pointer;
+    border: none;
+    background: none;
+    z-index: 100;
+}
 } 
 
 /*

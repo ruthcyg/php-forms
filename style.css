@@ -295,9 +295,9 @@
     color:black;
     position: fixed;
     top: 0.5rem;
-    right: 3.1rem;
-    margin-top: 2.5rem;
-    
+    right: 4.5rem;
+    margin-top: 5.5rem;
+    padding: 0.5rem;
     font-size: 4rem;
     cursor: pointer;
     border: none;

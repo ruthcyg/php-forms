@@ -24,7 +24,17 @@
 
   
   /* GENERAL ELEMENTS */
+  .container {
+    display: grid;
+    grid-template-columns: [container-start] 1fr [center-start] repeat(6, [col-start] minmax(min-content, 16.66667rem) [col-end]) [center-end] 1fr [container-end];
+    grid-template-rows: min-content 90vh repeat(9, min-content);
+  }
   
+  @media screen and (max-width: 800px) {
+    .container {
+      grid-template-rows: min-content 100vh repeat(9, min-content);
+    }
+  }
 
   .header {
    /* grid-column: container-start / container-end;*/
@@ -39,7 +49,7 @@
     background-color: rgba(255, 255, 255, 0.95);
   }
   
-  
+  /**/
   .nav__links {
     display: flex;
     align-items: center;
@@ -83,13 +93,14 @@
     top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  max-width: 60rem;
-  
-  padding: 6rem 4rem;
+  /*max-width: 70rem;*/
+  /*padding: 6rem 4rem;*/
+  padding:2.5rem;
 
   z-index: 1000;
   transition: all 0.5s;
   display: flex;
+  grid-template-columns: container-start / container-end;
   
  
   }
@@ -156,20 +167,20 @@
     border: none;
   }
 
+  /*Button Close Modal*/
   .btn--close-modal {
     font-family: inherit;
-    color:black;
+    color:white;
     position: fixed;
     top: 0.5rem;
-    right: 4rem;
+    right: 3.1rem;
+    margin-top: 1.5rem;
+    
     font-size: 4rem;
     cursor: pointer;
     border: none;
     background: none;
     z-index: 100;
-
-    
-    
   }
 
   .submit-button{
@@ -194,40 +205,98 @@
   }
 
 
-  @media screen and (max-width: 999px) {
+  @media screen and (min-width: 900px) {
     .modal {
       display: flex;
-      flex-wrap: wrap;
-      height: 85vh;
-  
+      position: absolute;
     }
     .submit-button{
       width:100%;
     }
     .subscribe-form{
-      padding: 10rem;
+      padding: 1rem;
+    }
+    .subscription-service{
+      padding: 0;
     }
   } 
-  /*
- @media screen and (max-width: 400px) {
+
+/*
+  @media screen and (max-width: 900px) {
+   .modal{
+      flex-wrap: wrap;
+      padding: 2rem;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(30rem, 2fr));
+   height:100vh;
+      
+  }
+  #text-top{
+    text-align: center;
+  } 
+  .subscription-service{
+    padding: 0;
+   
+  }
+.subscribe-form{
+    padding: 10rem;
+   
+  }
+  }
+*/
+
+ @media screen and (max-width: 800px ) {
   .modal {
     display: flex;
-    flex-wrap: wrap;
-    height: 80vh;
-    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+   /* padding: 1rem;*/
+    position: block;
+   /* grid-template-columns: repeat(auto-fit, minmax(3rem, 1fr));*/
+  flex-wrap:wrap;
+  padding: 6rem 4rem;
+  
+  }
+  
+  .subscribe-form{
+    padding: 6.5rem;
+    margin-bottom: 5rem;
+   /* grid-template-columns:container-start / container-end;*/
+  }
+  #text-top{
+    font-size: 1.2rem;
+    
+    
   }
   .submit-button{
-    width:100%;
+    padding: 0.5rem;
+    align-items: center;
+    padding: 0.2rem;
+    
   }
+  img{
+    
+    width: 30%;
+    height:30%;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    
+
+
+}
+
 } 
 
+/*
 @media screen and (max-width: 384px) {
   .modal {
-    display: flex;
-    flex-wrap: wrap;
-    height: 280vh;
-    width: auto;
-    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+   
+  display: flex;
+  flex-wrap: wrap;
+  padding: 1rem;
+    height: 120vh;
+    grid-template-columns: repeat(auto-fit, minmax(5rem, 1fr));
   }
   .submit-button{
     width:100%;
